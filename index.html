@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="main-content">
+        <h1>Bem-vindo ao meu portfólio</h1> <br>
+    </div>
+
+    <div class="containerB">
+        <!-- Conteúdo existente -->
+    
+        <!-- Botão "Meu perfil" -->
+        <button id="profile-btn">Meu perfil</button>
+    
+        <!-- Card de perfil (inicialmente oculto) -->
+        <div class="profile-card">
+            
+            <a href="https://colab.research.google.com/drive/1qN5NCAp6l3b9mCI1PAIG1cAsXOYsMnDO?usp=sharing" target="_blank" rel="noopener noreferrer">Colab</a>
+            <a href="https://github.com/vinicinnnn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </div>
+    
+    <div class="subjects-container">
+        <!-- Conteúdo dos cards -->
+        <div class="subject" id="automação">
+            <h2>Automação Industrial</h2>
+            <div class="content">
+                <p>
+                    <strong>Introdução ao Arduino e C++</strong> <br>
+                     
+                    O Arduino é uma ferramenta incrível para quem gosta de criar coisas eletrônicas. Onde você pode desenvolver desde robôs até sistemas de automação para sua casa. A linguagem que usamos para programar é baseada em C++, mas de uma forma simplificada, o que facilita bastante para quem está começando. <br>
+                    <strong>Por que o Arduino é tão útil?</strong> <br>
+
+                    <strong>Fácil de começar:</strong> Não importa se você é iniciante, há muitos recursos online e uma comunidade super acolhedora para te ajudar. <br>
+
+                    <strong>Programação descomplicada:</strong> A linguagem é amigável e adaptada, então você não precisa ser um expert em código para fazer projetos legais. <br>
+
+                    <strong>Versatilidade sem limites:</strong> Você pode conectar praticamente qualquer coisa ao Arduino – sensores, luzes, motores – e dar vida às suas ideias mais criativas. <br>
+
+                    <strong>Exemplo de Projeto: Semáforo com Arduino</strong> <br>
+                    <img src="img/Captura de tela 2024-06-16 133710.png" class="subject-image">
+
+                </p>
+            </div>
+            <span class="close-btn">X</span>
+        </div>
+
+        <div class="subject" id="dados">
+            <h2>Ciência de Dados</h2>
+            <div class="content">
+                <p>
+                    <strong>Explorando Ciência de Dados com Google Colab: Amostragem, Cálculos e Qui-Quadrado</strong> <br> <br>
+
+                    <strong>Google Colab: Facilitando a Ciência de Dados</strong> <br>
+                    Google Colab é uma plataforma acessível e poderosa para desenvolvimento de projetos de ciência de dados. Com suporte integrado ao Python e acesso a GPUs gratuitas, é ideal para análises estatísticas e machine learning diretamente no navegador. <br>
+                    <img src="img/Captura de tela 2024-06-15 162523.png" class="subject-image"> <br>
+                    
+                     <strong>Amostragem: Selecionando Dados Representativos</strong> <br>
+                        Amostragem é crucial para análise estatística, permitindo extrair insights de uma população maior. Métodos comuns incluem: <br>
+
+                        - Amostragem Aleatória Simples: Cada elemento tem a mesma chance de ser selecionado.br <br>
+                        - Amostragem Estratificada: Divisão da população em estratos para garantir representatividade. <br>
+                        - Amostragem por Conglomerados: Seleção de grupos aleatórios da população. <br>
+
+                        <img src="img/Captura de tela 2024-06-15 162957.png" class="subject-image"> <br>
+
+                        <strong>Cálculos Estatísticos: Média, Mediana e Moda</strong> <br>
+                        Média: Calcula o valor central de um conjunto de dados. <br>
+                        Mediana: Valor do meio em dados ordenados. <br>
+                        Moda: Valor mais frequente no conjunto de dados. <br> 
+
+                        
+
+                        <strong>Teste Qui-Quadrado: Avaliando Associações</strong> <br>
+                        O teste Qui-Quadrado é utilizado para determinar associações significativas entre variáveis categóricas, como: <br>
+
+                        - Qui-Quadrado de Pearson: Para frequências esperadas conhecidas.br <br>
+                        - Qui-Quadrado de Independência: Avalia independência entre variáveis. <br>
+                    
+
+                </p>
+            </div>
+            <span class="close-btn">X</span>
+        </div>
+
+        <div class="subject" id="banco">
+            <h2>Banco de Dados</h2>
+            <div class="content">
+                <p>
+                    <strong>Modelo de Negócio 01: E-commerce</strong> <br>
+                        No e-commerce, o banco de dados é organizado em duas principais categorias de dados: <br>
+                    <strong>Entidades:</strong> <br>
+                        1. Cliente: <br>
+                        - Campos: código do cliente, primeiro nome, último nome, CPF e endereço. <br>
+                        2. Produto: <br>
+                        - Campos: código do produto, nome, marca, categoria e preço. <br>
+                       <strong>Relacionamento:</strong> <br>
+                        - Um cliente pode comprar de 0 a N produtos. <br>
+                        - Um produto pode ser comprado por 0 ou 1 cliente. <br>
+
+                      <strong>Modelo Conceitual (Diagrama ER):</strong>
+                        - Chave Primária (PRIMARY KEY): Identificador único para cada item no banco de dados. <br>
+
+                        - Chave Estrangeira (FOREIGN KEY): Referência à chave primária de outra entidade para estabelecer conexões entre elas. <br>
+
+                        - Regra: Em relacionamentos 1 para N, a chave estrangeira está sempre do lado N. <br>
+
+                        <strong>Modelo de Negócio 02: Hospital</strong> <br>
+                        No ambiente hospitalar, o banco de dados é estruturado em duas principais categorias de dados: <br>
+
+                        <strong>Entidades:</strong>
+
+                        1. Paciente: <br>
+                        
+                        - Campos: código do paciente, primeiro nome, último nome, CPF e endereço. <br>
+
+                        2. Médico: <br>
+                        
+                        - Campos: código do médico, primeiro nome, último nome, CRM e especialidade. <br>
+
+                        <strong>Relacionamento:</strong> <br>
+                        - Um paciente pode ter de 0 a N consultas. <br>
+                        - Um médico pode atender de 0 a N pacientes. <br>
+
+                        <strong>Modelo Conceitual (Diagrama ER):</strong>
+
+                        - Chave Primária (PRIMARY KEY): Identificador único para cada item no banco de dados. <br>
+
+                        - Chave Estrangeira (FOREIGN KEY): Referência à chave primária de outra entidade para estabelecer conexões entre elas. <br>
+
+                        - Regra: Em relacionamentos N para N, um novo entidade é criada para manter as chaves primárias das entidades originais. <br>
+
+                        <strong>Conclusão</strong>
+                        Os modelos de negócio destacam a importância da modelagem de dados em um banco de dados relacional. Através do Diagrama Entidade-Relacionamento (ER), é possível visualizar claramente como as entidades estão conectadas por meio de chaves primárias e estrangeiras. Esta abordagem garante uma organização eficaz e a integridade dos dados tanto no e-commerce quanto no ambiente hospitalar, facilitando a gestão e manipulação das informações de forma segura e eficiente. <br>
+
+                        <br>
+
+                        <strong>SGBD - Sistema de Gerenciamento de Banco de Dados</strong> <br>
+
+                        Quando falamos de bancos de dados relacionais, há várias opções de sistemas de gerenciamento disponíveis, sendo os mais comuns: MySQL, OracleDB, SQL Server, MariaDB e PostgreSQL. Cada um desses sistemas vem com um servidor SQL, uma interface de desenvolvimento e outras ferramentas que facilitam a administração e manipulação dos dados. <br>
+
+                        <strong>Principais SGBDs e suas Características:</strong> <br>
+                        <img src="img/Captura de tela 2024-06-15 152135.png" class="subject-image">   <br>
+
+                        <strong>Propriedades ACID</strong> <br>
+                          As propriedades ACID são fundamentais para garantir que as operações no banco de dados sejam confiáveis e consistentes. <br>
+
+                        <strong>Atomicidade</strong> <br>
+                         Atomicidade garante que uma transação seja executada completamente ou não seja executada de forma alguma. Se algo der errado no meio do caminho, todas as alterações feitas até aquele ponto são desfeitas para manter o banco de dados em um estado consistente. <br>
+
+                        <strong>Consistência</strong> <br>
+                         Consistência significa que quaisquer operações no banco de dados devem respeitar todas as regras e restrições definidas. Se uma operação violar essas regras, o sistema impede que ela seja concluída e restaura o estado anterior. <br>
+                        <strong>Isolamento</strong> <br>
+                         Isolamento permite que várias transações ocorram simultaneamente sem interferir umas nas outras. Cada transação é tratada como se fosse a única em execução, garantindo que os resultados sejam previsíveis e consistentes, mesmo em ambientes de alto tráfego. <br>
+                        <strong>Durabilidade</strong> <br>
+                         Durabilidade garante que as alterações feitas por uma transação sejam permanentemente salvas no banco de dados, mesmo que ocorram falhas no sistema. Isso significa que uma vez que uma transação é confirmada como concluída, suas alterações são seguras e não serão perdidas. <br>
+
+                        <strong>Conclusão</strong> <br>
+                        A escolha do SGBD adequado e o entendimento das propriedades ACID são essenciais para projetar sistemas robustos e confiáveis. Cada SGBD oferece suas próprias vantagens e ferramentas que podem ser exploradas conforme as necessidades específicas de cada aplicação. As propriedades ACID garantem que as transações no banco de dados sejam executadas de maneira segura e consistente, protegendo a integridade dos dados e proporcionando confiança na gestão das informações. <br>
+                         <br>
+
+                         <strong>Comandos SQL: Fundamentos para Manipulação e Controle de Dados</strong> <br>
+                         <br> <br>
+                         <strong>DDL - Data Definition Language</strong> <br>
+
+                         A Linguagem de Definição de Dados (DDL) no SQL é usada para definir a estrutura dos objetos de banco de dados. Alguns comandos DDL comuns incluem: <br>
+                            - CREATE: Para criar objetos como tabelas, índices, visões, etc. <br>
+                            - ALTER: Para modificar a estrutura de objetos existentes no banco de dados. <br>
+                            - DROP: Para excluir objetos do banco de dados. <br>
+                          <strong>DML - Data Manipulation Language</strong> <br>
+                          A Linguagem de Manipulação de Dados (DML) é usada para gerenciar os dados dentro dos objetos de banco de dados. Exemplos de comandos DML são: <br>
+                            INSERT: Para inserir novos dados em uma tabela. <br>
+                            UPDATE: Para modificar dados existentes em uma tabela. <br>
+                            DELETE: Para excluir dados de uma tabela. <br>
+
+                            <strong>DQL - Data Query Language</strong> <br>
+                            A Linguagem de Consulta de Dados (DQL) é usada para recuperar informações específicas do banco de dados. O principal comando DQL é: <br>
+                            - SELECT: Para consultar dados de uma ou mais tabelas. <br>
+
+                            <strong>DTL - Data Transaction Language</strong> <br>
+                            A Linguagem de Transação de Dados (DTL) é usada para gerenciar transações no banco de dados. Isso inclui garantir a integridade dos dados durante operações complexas. Exemplos de comandos DTL são: <br>
+                            - COMMIT: Para confirmar as alterações feitas por uma transação. <br>
+                            - ROLLBACK: Para reverter as alterações feitas por uma transação. <br> 
+                            - SAVEPOINT: Para definir pontos de salvamento dentro de uma transação. <br>
+
+                            <strong>DCL - Data Control Language</strong> <br>
+                            A Linguagem de Controle de Dados (DCL) é usada para gerenciar privilégios e permissões dentro do banco de dados. Exemplos de comandos DCL incluem: <br>
+                            - GRANT: Para conceder permissões específicas aos usuários. <br>
+                            - REVOKE: Para revogar permissões concedidas anteriormente. <br>
+
+                            <strong>O que é Normalização?</strong>
+                            Normalização é o processo de organizar os dados em um banco de dados relacional. O objetivo é reduzir a redundância e eliminar dependências inconsistentes entre os dados, garantindo que o banco de dados seja mais flexível e eficiente. <br>
+                            
+                            <strong>Por que Normalizar?</strong>
+                            - Redução de Redundância: Evita armazenar os mesmos dados em múltiplos lugares, economizando espaço e facilitando a manutenção. <br>
+
+                            - Consistência dos Dados: Alterações em dados devem ser feitas em um único lugar para garantir precisão e consistência. <br>
+
+                            <strong>Formas Normais</strong> <br>
+                            A normalização segue várias formas normais, cada uma com regras específicas para estruturar os dados de maneira adequada: <br>
+                            
+                            <strong>1. Primeira Forma Normal (1FN):</strong> <br>
+                            - Cada coluna em uma tabela deve conter valores atômicos (indivisíveis). <br>
+                            - Elimina a repetição de grupos de colunas. <br>
+
+                            <strong>2. Segunda Forma Normal (2FN):</strong> <br>
+                            - Atende à 1FN. <br>
+                            - Todos os atributos não-chave dependem totalmente da chave primária. <br>
+                            
+                            <strong>3. Terceira Forma Normal (3FN):</strong> <br>
+                            - Atende à 2FN. <br>
+                            - Não há dependência transitiva de atributos não-chave pela chave primária. <br>
+
+                            <strong>Outras Formas Normais</strong> <br>
+                            - Forma Normal de Boyce-Codd (FNBC): Refinamento da 3FN para determinar dependências funcionais adicionais. <br>
+
+                            - Quarta Forma Normal (4FN) e Quinta Forma Normal (5FN): Lidam com situações mais complexas de dependências multivaloradas e dependências de junção. <br>
+
+                            <strong>Benefícios da Normalização</strong> <br>
+                            - Aplicações mais Estáveis: Menor chance de anomalias nos dados, o que resulta em sistemas mais robustos. <br>
+
+                            - Aumento na Eficiência: Reduz o tamanho das tabelas, facilitando a consulta e manipulação dos dados. <br>
+
+                            <br>
+
+                            <strong>MongoDB: Um Banco de Dados NoSQL Flexível e Poderoso</strong> <br>
+
+                            MongoDB é um banco de dados NoSQL que se diferencia dos bancos de dados relacionais tradicionais por sua estrutura flexível baseada em documentos. Em vez de tabelas com linhas e colunas, o MongoDB armazena dados em documentos no formato JSON (JavaScript Object Notation). <br>
+                             <strong>Principais Características</strong> <br>
+                            - Modelo de Dados Baseado em Documentos: Utiliza documentos BSON (Binary JSON), que são estruturas de dados flexíveis e autocontidas. <br>
+
+                            - Escalabilidade: Suporta escalabilidade horizontal de forma nativa, distribuindo os dados em múltiplos servidores. <br>
+
+                            - Desempenho: Possui alta performance de leitura e gravação, especialmente em operações de consulta complexas. <br>
+
+                            - Flexibilidade: Não exige um esquema de dados rígido, permitindo que documentos na mesma coleção possam ter estruturas diferentes. <br>
+
+                            <strong>Vantagens do MongoDB</strong> <br>
+                            Facilidade de Uso: A sintaxe do MongoDB é simples e semelhante ao JSON, facilitando o desenvolvimento e a integração com aplicações.
+
+                            - Escala Horizontal: Pode lidar com grandes volumes de dados distribuídos em clusters, aumentando a capacidade conforme necessário. <br>
+
+                            - Consultas Poderosas: Suporta consultas ricas com suporte a índices, agregações e consultas ad hoc. <br>
+
+                            - Documentação Rica: MongoDB oferece uma documentação abrangente e uma comunidade ativa de suporte. <br>
+
+                            <strong>Casos de Uso Comuns</strong> <br>
+                            - Aplicações Web: Ideal para armazenamento de dados de aplicações web devido à sua flexibilidade e escalabilidade. <br>
+
+                            - Big Data: Usado em ambientes que exigem processamento e análise de grandes volumes de dados de forma eficiente. <br>
+
+                            - IoT (Internet das Coisas): Por lidar bem com dados não estruturados e sem um esquema fixo, é adequado para armazenar dados gerados por dispositivos IoT. <br>
+
+                            <strong>Conclusão</strong> <br>
+                            MongoDB é uma escolha poderosa para projetos que demandam flexibilidade, escalabilidade e desempenho. Sua abordagem baseada em documentos e sua capacidade de escalabilidade horizontal o tornam uma solução popular entre desenvolvedores e empresas que precisam lidar com dados variados e em crescimento contínuo. Integrar MongoDB em um projeto pode proporcionar não apenas eficiência operacional, mas também uma base sólida para inovação e crescimento futuros.
+                </p>
+            </div>
+            <span class="close-btn">X</span>
+        </div>
+
+        <div class="subject" id="web">
+            <h2>Desenvolvimento web</h2>
+            <div class="content">
+                <p>
+                    <strong>Explorando os Fundamentos: HTML, CSS e JavaScript</strong> <br>
+                    <br>
+
+                    <strong>HTML (Hypertext Markup Language):</strong> <br>
+                    HTML é como o esqueleto das páginas web. Usando tags como, ele estrutura tudo, desde textos até imagens e links, de uma maneira que os navegadores entendem. <br>
+
+                    <strong>CSS (Cascading Style Sheets):</strong> <br>
+                    CSS é o responsável pelo estilo das páginas web. Ele dá cor, fonte e posicionamento aos elementos HTML, tornando tudo bonito e organizado na tela do seu dispositivo. <br>
+
+                    <strong>JavaScript:</strong> <br>
+                    JavaScript é como a cola que torna as páginas web interativas. Com ele, você pode mexer nos elementos HTML e CSS, criar animações, validar formulários e muito mais, tudo isso de forma dinâmica. <br>
+
+                    <strong>DOM (Document Object Model):</strong> <br>
+                    O DOM é uma representação da sua página web como uma árvore de objetos. Cada elemento (como um parágrafo ou uma imagem) é um "nó" nessa árvore, permitindo que você os acesse e modifique usando JavaScript. Isso torna possível atualizar conteúdos e responder a eventos do usuário em tempo real. <br>
+
+                    <strong>Pilha e Filha:</strong> <br>
+                    - Pilha: Funciona como uma pilha de pratos: o último que você coloca é o primeiro que você tira. É usada para organizar e gerenciar funções e variáveis em JavaScript, por exemplo. <br>
+                    - Filha: É como uma prateleira onde você guarda coisas que precisa acessar de forma mais dinâmica. Aqui, objetos e dados são alocados durante a execução do programa. <br> <br>
+
+                    Entender esses conceitos é crucial para criar páginas web que não só funcionem bem, mas também sejam bonitas e interativas. Com HTML, CSS e JavaScript, você pode construir desde simples blogs até aplicações web complexas que respondem às necessidades dos usuários. <br>
+
+                    <strong>Conclusão:</strong>
+                    Dominar HTML, CSS, JavaScript e entender o funcionamento do DOM, pilha e filha são habilidades essenciais para quem quer se aventurar no desenvolvimento web. Essas ferramentas são a base para criar experiências online memoráveis e funcionais, impulsionando sua carreira na área de tecnologia e inovação digital. <br>
+
+                   <img src="img/Captura de tela 2024-06-16 140421.png" class="subject-image">
+
+                </p>
+            </div>
+            <span class="close-btn">X</span>
+        </div>
+
+        <div class="subject" id="linguagem">
+            <h2>Linguagem de Programação</h2>
+            <div class="content">
+                <p>
+                    <strong>Entendendo Variáveis na Programação</strong><br><br>
+
+                    Variáveis são como vagas numeradas em um estacionamento, cada uma reservada para guardar um tipo específico de informação. Ao criar uma variável, escolhemos um nome para ela e especificamos que tipo de dado ela vai armazenar.<br><br>
+
+                    Por exemplo, podemos ter uma variável chamada idade para guardar números inteiros:
+                    <img src="img/Captura de tela 2024-06-14 215339.png" class="subject-image"><br><br>
+
+                    Aqui, int indica que estamos armazenando um número inteiro, e idade é o nome dado à nossa vaga no estacionamento.<br><br>
+
+                    <strong>Tipos de Dados:</strong><br>
+                    - boolean: Guarda valores verdadeiro (true) ou falso (false).<br>
+                    - char: Armazena um único caractere, como 'A' ou '%'.<br>
+                    - int, float, double: São usados para números inteiros e decimais com diferentes níveis de precisão.<br><br>
+
+                    <strong>Como Declarar Variáveis:</strong><br>
+                    Podemos declarar e atribuir um valor à variável em uma única linha:
+                    <img src="img/Captura de tela 2024-06-14 215700.png" class="subject-image"><br><br>
+
+                    Ou primeiro declarar a variável e depois atribuir um valor:
+                    <img src="img/Captura de tela 2024-06-14 215820.png" class="subject-image"><br><br>
+
+                    <strong>Convenções Importantes:</strong><br>
+                    - Os nomes das variáveis começam com letra minúscula e usam o estilo camelCase para melhor legibilidade, como nomeCompleto ou idadeDoUsuario.<br>
+                    - Não podem começar com números, ter espaços ou usar palavras reservadas da linguagem.<br><br>
+
+                    <strong>Manipulando Textos e Caracteres:</strong><br>
+                    Podemos juntar caracteres usando o operador '+':
+                    <img src="img/Captura de tela 2024-06-14 220005.png" class="subject-image"><br><br>
+
+                    Para textos maiores, utilizamos a classe 'String':
+                    <img src="img/Captura de tela 2024-06-14 220111.png" class="subject-image"><br><br>
+
+                    <strong>Boas Práticas:</strong><br>
+                    - Escolha nomes descritivos para suas variáveis para facilitar o entendimento do código por outras pessoas.<br>
+                    - Evite nomes muito curtos ou longos demais; eles devem ser claros e precisos.<br>
+                    - Mantenha consistência na nomenclatura para tornar seu código mais organizado e fácil de manter.<br><br>
+
+                    <strong>Conclusão:</strong><br>
+                    As variáveis são fundamentais na programação para armazenar e manipular dados. Seguindo essas diretrizes simples, você não apenas escreverá código mais claro e bonito, mas também facilitará o trabalho de quem precisar entender ou modificar seu código no futuro. <br><br>
+                    
+                    
+                    <strong>Operadores:</strong><br>
+                    <img src="img/Captura de tela 2024-06-14 221024.png" class="subject-image"><br>
+
+                    <strong>Estruturas de Decisão em Programação: if, if/else e switch</strong> <br>
+                    Na programação, as estruturas de decisão são fundamentais para controlar o fluxo do programa com base em condições específicas. Aqui está um resumo detalhado dessas estruturas: <br>
+                    <strong>1. if:</strong>
+                    A estrutura if permite executar um bloco de código se uma condição lógica for verdadeira. Por exemplo: <br>
+                    <img src="img/Captura de tela 2024-06-14 221810.png" class="subject-image"> <br>
+
+                    Se a condição testeLogico < 5 for verdadeira, o bloco de instruções dentro das chaves {} será executado.
+                    <br>
+                    <strong>2. if/else:</strong> <br>
+                    A estrutura if/else estende a if, fornecendo um caminho alternativo caso a condição não seja verdadeira. Por exemplo: <br>
+                    <img src="img/Captura de tela 2024-06-14 222102.png" class="subject-image"> <br>
+
+                    Aqui, se testeLogico < 5 for verdadeiro, o primeiro bloco é executado; caso contrário, o segundo bloco (após else) é executado. <br>
+                   <strong>3. switch:</strong>  <br>
+                    A estrutura switch permite selecionar um dos muitos blocos de código a serem executados com base no valor de uma variável ou expressão. Cada caso (case) representa uma possível correspondência de valor, e o bloco default é executado se nenhum caso corresponder. É importante usar break após cada bloco de instruções para sair da estrutura switch. Exemplo:
+                    <br>
+                    <img src="img/Captura de tela 2024-06-14 222230.png" class="subject-image"> <br>
+                    Neste exemplo, se opção for 2, o bloco de instruções associado ao case 2 será executado. Se opção não corresponder a nenhum dos casos, o bloco default será executado. <br>
+                   <strong>Considerações Finais:</strong>  <br>
+                    <strong>Boas Práticas:</strong> 
+                    Utilize essas estruturas de forma clara e organizada para tornar seu código mais legível. <br>
+
+                    <strong>Quebras (break):</strong> 
+                    No switch, não esqueça de usar break para evitar a execução de casos subsequentes inadvertidamente. <br>
+
+                   <strong>Entendimento:</strong>  
+                    Domine o uso dessas estruturas para poder criar lógicas complexas em seus programas de forma eficiente e robusta. <br>
+
+                    Com essas estruturas de decisão, você poderá controlar efetivamente o fluxo do seu programa de acordo com diferentes condições, facilitando a implementação de lógicas variadas em suas aplicações.
+                    <br>
+                    <strong>Estruturas de Repetição em Programação</strong> <br>
+                    Quando precisamos que um bloco de código se repita várias vezes em um programa, usamos o que chamamos de estruturas de repetição. Existem três tipos principais que são bastante úteis: while, do/while e for. Vamos entender cada um deles de uma maneira simples: <br>
+
+                    <strong>1. while:</strong> <br>
+                    O while é como um guarda que continua repetindo um bloco de código enquanto uma condição específica for verdadeira. <br>
+                    <img src="img/Captura de tela 2024-06-15 131225.png" class="subject-image"> <br>
+                    <strong>Explicação:</strong> <br>
+                    - Começamos com i valendo 0. <br>
+                    - O bloco de código dentro do while se repete enquanto i for menor que 10. <br>
+                    - A cada repetição, i é aumentado em 1 (i++). <br>
+
+                    <strong>2. do/while:</strong> <br>
+                    O do/while é parecido com o while, mas garante que o bloco de código seja executado pelo menos uma vez, mesmo que a condição inicial já seja falsa. <br>
+                    <img src="img/Captura de tela 2024-06-15 131623.png" class="subject-image"> <br>
+                    <strong>Explicação:</strong> <br>
+                    - O bloco de código dentro do do é executado pelo menos uma vez. <br>
+                    - Depois, verifica-se a condição i <= 0. <br>
+                    - Se verdadeira, o bloco é repetido; se não, o loop termina. <br>
+
+                    <strong>3. for:</strong> <br>
+                    O for é ideal quando sabemos exatamente quantas vezes queremos que o bloco de código se repita, pois possui uma estrutura definida com inicialização, condição e incremento. <br>
+                    <img src="img/Captura de tela 2024-06-15 131949.png" class="subject-image"> <br>
+                    
+                    <strong>Detalhes:</strong> <br>
+
+                    - Começamos com i valendo 0 e repetimos o bloco enquanto i for menor que 5. <br>
+                    - A cada repetição, i é incrementado em 1 (i++). <br>
+
+                    <strong>Importante lembrar</strong> <br>
+                    É fundamental garantir que os loops tenham uma maneira de serem interrompidos eventualmente, caso contrário, o programa pode ficar preso em um loop infinito, o que não é bom. Cada tipo de estrutura de repetição tem suas aplicações específicas dependendo do que você precisa fazer no seu programa. <br>
+
+                    Esses conceitos básicos são muito importantes na programação para automatizar tarefas repetitivas de forma eficiente. <br>
+
+                    <strong>Vetores (Arrays)</strong> <br>
+                    Vetores, ou arrays, são como listas onde podemos guardar vários valores do mesmo tipo em sequência na memória. Eles são muito úteis para organizar informações de forma ordenada em programas. <br>
+                     
+                    <strong>Como Começar</strong>
+
+                    <img src="img/Captura de tela 2024-06-15 133631.png" class="subject-image"> <br>
+                    <strong>Trabalhando com Dados</strong> <br>
+                    <img src="img/Captura de tela 2024-06-15 133742.png" class="subject-image"> <br>
+                    <strong>Percorrendo os Dados</strong> <br>
+                    <img src="img/Captura de tela 2024-06-15 134029.png" class="subject-image"> <br>
+
+                    <strong>Matrizes</strong> <br>
+                    Matrizes são como tabelas onde podemos guardar dados em duas ou mais dimensões. Elas são úteis quando precisamos organizar informações de forma mais complexa. <br>
+                     <strong>Começando com Matrizes</strong> <br>
+                     <img src="img/Captura de tela 2024-06-15 134230.png" class="subject-image"> <br>
+                     <strong>Trabalhando com Dados em Matrizes</strong> <br>
+                     <img src="img/Captura de tela 2024-06-15 134346.png" class="subject-image"> <br>
+                     <strong>Percorrendo uma Matriz</strong> <br>
+                     <img src="img/Captura de tela 2024-06-15 134441.png" class="subject-image"> <br>
+                     <strong>Conclusão</strong>
+
+                     Vetores e matrizes são ferramentas poderosas na programação para organizar e acessar dados de forma estruturada. Usando loops como for e foreach, podemos manipular e trabalhar com esses dados de maneira eficiente e organizada. É importante dominar esses conceitos para desenvolver programas mais claros e eficazes em Java e outras linguagens de programação. <br>
+
+                    <strong>Introdução às Funções</strong> <br>
+                    Funções são como assistentes pessoais no mundo da programação. Elas são conjuntos de instruções que executam tarefas específicas quando são chamadas pelo seu nome. As funções podem receber informações para trabalhar (chamadas de parâmetros) e podem também retornar um resultado ao ponto de onde foram chamadas. <br>
+                     <strong>Exemplo Básico de Função</strong> <br>
+                     <img src="img/Captura de tela 2024-06-15 135507.png" class="subject-image"> <br>
+                     <strong>Funções Recursivas</strong> <br>
+                     Funções recursivas são aquelas que têm a capacidade de chamar a si mesmas dentro do seu próprio código. É como se uma pessoa dissesse "vou resolver isso do mesmo jeito que resolvi a primeira parte". <br>
+                     <strong>Exemplo de Função Recursiva</strong> <br>
+                     <img src="img/Captura de tela 2024-06-15 135613.png" class="subject-image"> <br>
+                     <strong>Conclusão</strong> <br>
+                     Funções são como pequenos blocos de construção que nos ajudam a organizar nosso código de maneira clara e eficiente. Elas facilitam a reutilização de código e permitem resolver problemas complexos dividindo-os em partes menores e mais gerenciáveis. As funções recursivas são especialmente úteis para resolver problemas que podem ser reduzidos a casos menores do mesmo problema. Compreender como usar funções é essencial para se tornar um bom programador em Java e em outras linguagens de programação.
+
+ 
+                </p>
+            </div>
+            <span class="close-btn">X</span>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

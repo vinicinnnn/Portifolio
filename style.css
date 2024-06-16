@@ -1,0 +1,269 @@
+/* CSS existente */
+
+/* Define estilos base para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte */
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); /* Fundo gradiente */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+/* Oculta a barra de rolagem no WebKit */
+body::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+/* Impede rolagem horizontal no IE e Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda a altura da viewport */
+}
+
+/* Conteúdo principal */
+.main-content {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* CSS adicional */
+
+/* Estilo para o cartão de perfil */
+.profile-card {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 65%; /* Posicionamento vertical */
+    left: 50%; /* Posicionamento horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o cartão */
+    z-index: 999; /* Garante sobreposição */
+    width: 90%; /* Largura do cartão */
+    max-width: 800px; /* Largura máxima do cartão */
+    height: 50px; /* Altura do cartão */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center;
+}
+
+/* Estilos para os links dentro do cartão */
+.profile-card a {
+    display: inline-block;
+    background-color: #764ba2;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-card a:hover {
+    background-color: #5e3d87;
+}
+
+/* Estilo para o botão de perfil */
+#profile-btn {
+    background-color: #764ba2;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#profile-btn:hover {
+    background-color: #5e3d87;
+}
+
+/* Exibe o cartão quando o botão é clicado */
+#profile-btn.clicked + .profile-card {
+    display: block;
+}
+
+/* Container dos cards de assunto */
+.subjects-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo para cada card de assunto */
+.subject {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.3s ease, height 0.3s ease;
+    margin: 20px;
+    width: calc(33.333% - 4px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo quando o card está expandido */
+.subject.expanded {
+    width: 100%; /* Ocupa toda a largura da viewport */
+    height: auto; /* Altura automática conforme conteúdo */
+    top: 0;
+    left: 0;
+    z-index: 999; /* Sobreposição acima de outros elementos */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+/* Estilo para o título do card */
+.subject h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #764ba2;
+}
+
+/* Estilo para o texto dentro do card */
+.subject p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Estilo para o conteúdo dentro do card */
+.subject .content {
+    display: none; /* Inicialmente oculto */
+    padding-top: 20px;
+}
+
+/* Exibe o conteúdo quando o card está expandido */
+.subject.expanded .content {
+    display: block;
+}
+
+/* Estilo para a imagem dentro do card */
+.subject-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Estilo para o botão de fechar */
+.close-btn {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none; /* Inicialmente oculto */
+}
+
+/* Exibe o botão de fechar quando o card está expandido */
+.subject.expanded .close-btn {
+    display: block;
+}
+
+/* Efeitos de hover para o card de assunto */
+.subject:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Media queries para ajustar o layout em diferentes tamanhos de tela */
+
+/* Ajustes para telas médias */
+@media screen and (max-width: 1024px) {
+    .subject {
+        width: calc(50% - 40px);
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media screen and (max-width: 600px) {
+    .subject {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Ajustes específicos para o card "Desenvolvimento web" */
+.subject#web .content p {
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+}
+
+.subject#web.expanded {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.subject#web.expanded h2 {
+    font-size: 2rem; /* Aumenta o tamanho do título */
+}
+
+.subject#web.expanded .content {
+    display: block; /* Exibe o conteúdo */
+    padding-top: 20px;
+}
+
+.subject#web.expanded p {
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+}
+
+.subject#web .subject-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Adiciona margem */
+}
+
+.subject#web .close-btn {
+    display: none; /* Oculta o botão de fechar inicialmente */
+}
+
+.subject#web.expanded .close-btn {
+    display: block; /* Exibe o botão de fechar quando o card está expandido */
+}
+
+@media screen and (max-width: 1024px) {
+    .subject#web {
+        width: calc(50% - 40px); /* Ajusta o tamanho do card para telas médias */
+    }
+
+    .subject#web.expanded {
+        height: auto; /* Ajusta a altura conforme necessário para telas médias */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .subject#web {
+        width: calc(100% - 40px); /* Ajusta o tamanho do card para telas pequenas */
+    }
+
+    .subject#web.expanded {
+        height: auto; /* Ajusta a altura conforme necessário para telas pequenas */
+    }
+}
